@@ -88,6 +88,8 @@ DATABASES = {
 }
 
 
+SERVER_HOST = 'https://www.jialixin.vip'
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
