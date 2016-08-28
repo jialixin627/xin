@@ -174,7 +174,7 @@
             </div>
         </div>
     </div>
-
+    {% for article in articles %}
     <div id="main" class="pure-u-1">
         <div class="email-content">
             <div class="email-content-header pure-g">
@@ -194,11 +194,12 @@
 
             <div class="email-content-body">
 
-            {{ article.content }}
+            {{ article.content | safe }}
 
             </div>
         </div>
     </div>
+    {% endfor %}
 </div>
 
 <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
