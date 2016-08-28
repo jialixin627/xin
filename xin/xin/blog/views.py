@@ -5,6 +5,6 @@ from django.template.response import TemplateResponse
 # Create your views here.
 
 def blog(request):
-    articles = Article.objects.all()
-    context = {'articles': articles}
+    article = Article.objects.first()
+    context = {'article': article}
     return TemplateResponse(request, 'blog/index.html', context)

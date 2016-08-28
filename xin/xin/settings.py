@@ -89,6 +89,10 @@ DATABASES = {
 
 
 SERVER_HOST = 'https://www.jialixin.vip'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    location('static'),
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
